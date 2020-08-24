@@ -27,6 +27,7 @@
                                     <connections>
                                         <outlet property="ingredientsLabel" destination="Phe-dw-eD6" id="GuO-6l-Cwh"/>
                                         <outlet property="titleLabel" destination="dIb-3p-4Db" id="F93-WV-GEF"/>
+                                        <segue destination="OoU-p4-BgR" kind="push" id="aN1-Z1-GRe"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -38,6 +39,41 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="285" y="302"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="a9x-k2-Hj3">
+            <objects>
+                <controller id="OoU-p4-BgR">
+                    <items>
+                        <table alignment="left" id="9NS-l2-YhV">
+                            <items>
+                                <tableRow identifier="RecipeHeader" selectable="NO" id="MM7-K2-iCf" customClass="RecipeHeaderController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="ukf-wF-gAK">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="ho6-Yc-JRq"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="ukf-wF-gAK" id="9MO-EE-Zmc"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="RecipeStep" id="0BQ-LS-cA7" customClass="RecipeStepController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="2dh-P2-voy">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="usy-xy-O6J"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="stepLabel" destination="2dh-P2-voy" id="56V-9A-r56"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="609" y="302"/>
         </scene>
     </scenes>
 </document>

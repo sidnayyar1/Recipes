@@ -55,4 +55,10 @@ class RecipesController: WKInterfaceController {
           "\(recipe.ingredients.count) ingredients")
       }
     }
+    
+    override func contextForSegue(withIdentifier
+      segueIdentifier: String, in table: WKInterfaceTable,
+      rowIndex: Int) -> Any? {
+      return recipeStore.recipes[rowIndex]
+    }
 }
