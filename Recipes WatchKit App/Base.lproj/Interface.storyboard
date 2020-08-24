@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xca-ke-Qcl">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Recipes-->
+        <scene sceneID="UWD-Xm-tP7">
+            <objects>
+                <controller title="Recipes" id="Xca-ke-Qcl" customClass="RecipesController" customModule="Recipes_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="DWD-eI-Tpy">
+                            <items>
+                                <tableRow identifier="RecipeRowType" id="w0a-F0-fDQ" customClass="RecipeRowController" customModule="Recipes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="M63-Lc-Tdr">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="dIb-3p-4Db"/>
+                                            <label alignment="left" text="Label" id="Phe-dw-eD6">
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ingredientsLabel" destination="Phe-dw-eD6" id="GuO-6l-Cwh"/>
+                                        <outlet property="titleLabel" destination="dIb-3p-4Db" id="F93-WV-GEF"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="DWD-eI-Tpy" id="Dyi-AS-ATt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="302"/>
+        </scene>
+    </scenes>
+</document>
